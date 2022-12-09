@@ -12,8 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(com.example.classaslibrary.R.layout.connect)
 
         val btn = findViewById<Button>(com.example.classaslibrary.R.id.btnConnect)
-
         val helpers = HelperClass()
+
+        btn.setOnClickListener {
+            helpers.connectLibrary(this)
+        }
 
     }
 }
